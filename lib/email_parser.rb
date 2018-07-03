@@ -17,7 +17,8 @@ class EmailParser
   end
 
   def parse
-    email.split /\s| |, /
+    variable = email.split /\s| |, /
+    variable.uniq
   end
 
 
